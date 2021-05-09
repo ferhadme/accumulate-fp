@@ -60,5 +60,8 @@ And many other things...
 
 ### TODO
 Modifying function for sequences like:
+
 1 + 2 + 4 + 7 + 11 + 16 = ?,
+
 0 + 1 + 1 + 2 + 3 + 5 + 8 = ? (Fibonacci numbers)
+
