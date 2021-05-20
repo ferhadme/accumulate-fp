@@ -6,7 +6,7 @@ Purpose is comparing functional programming in languages that have different par
 * Racket - Declarative and Functional
 
 ### What is accumulate function?
-It accumulates different things that changes with some constant value
+It accumulates different things that change with some constant value
 
 ### Examples
 1 + 3 + 5 + 7 = ?
