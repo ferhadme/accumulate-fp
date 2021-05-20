@@ -39,7 +39,7 @@ int result = Accumulate.<Integer>accumulate(
 
 <br />
 
-concatenates all letters of english alphabet: "ABCD...Z"
+Concatenates all letters of english alphabet: "ABCD...Z"
 ```.java
 String result = Accumulate.<String>accumulate(
         (arg1, arg2) -> arg1.concat(arg2),
@@ -57,4 +57,21 @@ String result = Accumulate.<String>accumulate(
 <br />
 
 And many other things...
-
+<br />
+<br />
+### Bonus Java Example
+Calculates total salary of all employees in one list 
+```.java
+List<Employee> employees = Arrays.asList(
+        new Employee("Farhad", 1000), new Employee("Namiq", 2000),
+        new Employee("Emin", 1300), new Employee("Cemil", 800),
+        new Employee("Elmir", 2300), new Employee("Rasim", 4000)
+);
+// counter is some global variable for keeping index and is 0 as initial value
+double totalSalary = Accumulate.<Double>accumulate(
+        (arg1, arg2) -> arg1 + arg2,
+        employees.get(counter).getSalary(),
+        employees.size(),
+        current -> employees.get(++counter).getSalary()
+);
+```
