@@ -6,7 +6,7 @@ Purpose is comparing functional programming in languages that have different par
 * Racket - Declarative and Functional
 
 ### What is accumulate function?
-It accumulates different things
+It accumulates different things that changes with some constant value
 
 ### Examples
 1 + 3 + 5 + 7 = ?
@@ -57,11 +57,4 @@ String result = Accumulate.<String>accumulate(
 <br />
 
 And many other things...
-
-### TODO
-Modifying function for sequences like:
-
-1 + 2 + 4 + 7 + 11 + 16 = ?,
-
-0 + 1 + 1 + 2 + 3 + 5 + 8 = ? (Fibonacci numbers)
 
