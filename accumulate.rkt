@@ -1,3 +1,5 @@
+#lang racket
+
 (define (accumulate operation initial-term num-of-terms next-operation)
   (define (accumulate-iter result term counter)
     (let ((current-result (operation result term)))
